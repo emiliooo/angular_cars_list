@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let car of cars">
+      <div class="col title_text">
+        <div *ngFor="let carMedia of car.media">
+          <ul>
+            <li>
+              <img src="{{ imgUrl + carMedia.url }}"  class="img-responsive inline-block" alt="pic" />
+            </li>
+            <button type="button" routerLink="/car/{{car.id}}" class="btn btn-primary">Details</button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="card-container">
+  <div class=" card-content">
+    <div class="row">
+      <div class="col context">
+        <ul>
+          <li>
+            <img src="{{ imgUrl + carDetails.id }}_k17.jpg" class="img-responsive inline-block" alt="pic" />
+          </li>
+          <li class="context_title_name_vehicle">
+            Jaguar {{carDetails.id}}
+          </li>
+          <li class="context_price_vehicle">
+            From {{carDetails.price}}
+          </li>
+          <li class="context_desc_vehicle">
+            {{carDetails.description}}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button routerLink="/carslist">back</button>
+  </div>
